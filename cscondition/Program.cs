@@ -11,7 +11,7 @@ namespace cscondition
         static void Main(string[] args)
         {
             Console.Write("숫자 입력 : ");
-          //var
+            //var
             int input = int.Parse(Console.ReadLine());
 
             /*
@@ -66,7 +66,7 @@ namespace cscondition
 
             Console.Write("이번 달은 몇 월인가요? ");
             int input2 = int.Parse(Console.ReadLine());
-            switch(input2)
+            switch (input2)
             {
                 case 12:
                 case 1:
@@ -91,6 +91,17 @@ namespace cscondition
                 default:
                     Console.WriteLine("지구가 아니냐?");
                     break;
+            }
+
+            Console.Write("입력 : ");
+            String line = Console.ReadLine();
+            if (line.Contains("안녕"))
+            {
+                Console.WriteLine("안녕하세요~");
+            }
+            else
+            {
+                Console.WriteLine("ㅎㅇㅎㅇ");
             }
         }
     }
