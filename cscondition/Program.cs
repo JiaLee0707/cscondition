@@ -17,8 +17,7 @@ namespace cscondition
             if (input % 2 == 0)
             {
                 Console.WriteLine("짝수입니다!");
-            } else
-         // if (input % 2 == 1)
+            } else // if (input % 2 == 1)
             {
                 Console.WriteLine("홀수 입니다!");
             }
@@ -35,11 +34,21 @@ namespace cscondition
             // 오전과 오후 구분
             if (DateTime.Now.Hour < 12)
             {
-                Console.WriteLine("오전입니다");
-            } else
-         // if (DateTime.Now.Hour >= 12)
+                // Console.WriteLine("오전입니다");
+                Console.WriteLine("아침 먹을 시간입니다");
+
+            }
+            else  // if (DateTime.Now.Hour >= 12)
             {
-                Console.WriteLine("오후입니다");
+                if (DateTime.Now.Hour < 15)
+                {
+                    Console.WriteLine("점심 먹을 시간입니다");
+                }
+                else
+                {
+                    // Console.WriteLine("오후입니다");
+                    Console.WriteLine("저녁 먹을 시간입니다");
+                }
             }
         }
     }
